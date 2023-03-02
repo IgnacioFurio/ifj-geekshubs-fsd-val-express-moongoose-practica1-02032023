@@ -10,6 +10,7 @@ const userSchema = new Schema(
         },
         email: {
             type: String,
+            required: true,
             unique: true
         },
         password: {
@@ -18,10 +19,10 @@ const userSchema = new Schema(
         },
         is_active: {
             type: Boolean,
-            Boolean: 1
+            default: true
         },
         role_id: {
-            type: String
+            ObjectId
         }
     });
 
