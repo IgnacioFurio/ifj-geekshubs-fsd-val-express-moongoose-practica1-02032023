@@ -7,9 +7,9 @@ const db = () => {
         process.env.MONGO_URI
     ).then(
         console.log("conection stablished")
-    ).catch(
+    ).catch((error) =>{
         console.log(error.message)
-    )
+})
 }
 
 module.exports = db

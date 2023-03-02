@@ -21,9 +21,10 @@ const userSchema = new Schema(
             type: Boolean,
             default: true
         },
-        role_id: {
-            ObjectId
-        }
+        // role_id: {
+        //     type: ObjectId,
+        //     required: true
+        // }
     });
 
 const User = model('User', userSchema);
